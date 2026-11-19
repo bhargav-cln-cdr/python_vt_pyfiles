@@ -95,7 +95,7 @@ while i < 5:
 2. Continue - When a continue statement is encountered,
               The current iteration will be skipped and 
               goes to the next iteration.
-Iteration - Execution of the loop body
+Iteration - The complete one time execution of the loop body
 These are used with Conditional Statements.
 """
 # Break
