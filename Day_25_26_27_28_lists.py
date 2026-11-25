@@ -556,3 +556,100 @@ print("l3 = ", l3)
 l1 = [1, 2, 3, 4, 5]
 l2 = l1 * 3
 print(l2) # [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+
+#Finding the minimum and maximum element from the list of elements
+ml=list(map(int,input().split()))
+min=ml[0]
+max=ml[0]
+for ele in ml:
+  if ele<min:
+    min=ele
+  if ele>max:
+    max=ele
+print(min,max)
+print(min(ml),max(ml))
+
+#Find &Print the duplicate elements from the given array of elements
+ml=list(map(int,input().split()))
+seen=set()
+duplicates=[]
+for ele in ml:
+  if ele not in seen :
+    seen.add(ele)
+  else:
+    duplicates.append(ele)
+print(duplicates)
+
+# Finding Left &Right rotations of the array
+arr=list(map(int,input().split()))
+k=int(input("Enter the value of k:"))
+k=k%len(arr)
+res=arr[k:]+arr[:k]
+print(res)
+
+res=arr[-k:]+arr[:-k]
+print(res)
+
+# Finding the sorting of the elements
+arr=list(map(int,input().split()))
+arr.sort()
+print(arr)
+sorted_list=sorted(arr)
+print(sorted_list)
+
+# Find the sum of the given array of elements
+arr=list(map(int,input().split()))
+sum=0
+for ele in arr:
+  sum+=ele
+print(sum)
+
+# Find the cumulative sum of array of elements
+arr=list(map(int,input().split()))
+sum=0
+cs=[]
+for ele in arr:
+  sum+=ele
+  cs.append(sum)
+print(cs)
+
+# Move the zeros to the end of the list
+arr=list(map(int,input().split()))
+res_arr=[]
+for ele in arr:
+   if ele!=0:
+    res_arr.append(ele)
+for ele in arr:
+   if ele==0:
+     res_arr.append(ele)
+print(res_arr)
+
+#Move the zeros to the end of the list using list comprehension
+numbers = [0, 10, 0, 20, 30, 0, 40]
+result = [num for num in numbers if num != 0]
+zeros = [num for num in numbers if num == 0]
+result = result + zeros
+print("After moving zeros:", result)
+
+# Reverse the list with built-in function
+arr=list(map(int,input().split()))
+arr.reverse()
+print(arr)
+
+#Reverse the list using 2-pointer approach
+start=0
+end=len(arr)-1
+while start<=end:
+  arr[start],arr[end]=arr[end],arr[start]
+  start+=1
+  end-=1
+print(arr)
+
+# Merge and sort the two arrays
+arr1=list(map(int,input().split()))
+arr2=list(map(int,input().split()))
+res=sorted(arr1+arr2)
+print(res)
+  
+  
+
