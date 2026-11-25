@@ -323,8 +323,13 @@ print(a_str)
 
 a = "Python"
 print(a.center(10))
-print(a.center(10, '*'))
+print(a.center(10, '*')) # If the number is even, then equal partitions will be done. Else more occurances will be taken on left side.
 print(a.center(11, '&'))
+
+word = "Hi"
+print(f"{word:*^8}")
+
+
 
 a = "12345"
 print(a.zfill(8))
@@ -381,7 +386,9 @@ print(a.format(language="Python", framework="Django"))
 
 d = {"language": "Python", "framework": "Django"}
 a = "I am learning {language} Programming Language and {framework} framework. {language} is easy to learn."
-a.format_map(d)
+res=a.format_map(d)
+print(res)
+print(a)
 
 # ASCII - American  Standard Code for Information Interchange
 a = "if"
