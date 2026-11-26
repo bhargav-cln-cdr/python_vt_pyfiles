@@ -1,0 +1,73 @@
+There are 4 types of arguments in python. They are:
+1.Positional
+2.Default
+3.Keyword
+4.Variable length or Multiple length arguments
+i.Multiple Positional arguments or Variable length positional arguments
+ii.Multiple Keyword arguments or Variable length keyword arguments
+
+Positional Arguments: The arguments in which the values of the parameters will be determined by the position of the arguments in the function call are called as Positional Arguments.
+
+def student(name, age):
+    print("Student Name:", name)
+    print("Student Age:", age)
+
+student("Bhargav", 24)
+student(24,"Bhargav")- It accepts the values but in the real world it does not convey meaningfulness.
+
+Default Arguments- The arguments in which the values of the parameters will be determined by the default values of the parameters provided in the function call. 
+That means, if the number of values in the function call are less than the number of parameters then the default values will be used else number of parameters = number of values in the function call then default values of the parameters will be overridden.
+
+def student(name, course="Python"):
+    print("Student Name:", name)
+    print("Course:", course)
+
+student("Bhargav")
+student("Ravi", "Java")
+
+Keyword Arguments: The Arguments that are passed to a function by explicitly specifying the parameter names(key=value pairs) are called keyword arguments.
+In this type, the order of arguments does not matter because we specify which value belongs to which parameter.
+
+def student(name, age, course):
+    print("Name:", name)
+    print("Age:", age)
+    print("Course:", course)
+
+student(age=24, course="Python", name="Bhargava")
+
+Variable-Length Arguments
+Definition: Variable-length arguments allow a function to accept any number of arguments instead of a fixed number of arguments.
+
+There are two types:
+1. *args – Variable-length positional arguments.
+2. **kwargs – Variable-length keyword arguments.
+
+A. *args – Variable-Length Positional Arguments
+The *args syntax allows us to pass multiple positional arguments to a function.Python collects these arguments as a tuple format.
+
+Example:
+def add(*args):    
+  total = 0    
+  for num in args:
+    print(type(args))
+    total = total + num    
+  print("Total:", total)
+add(10, 20)
+add(10, 20, 30)
+add(10, 20, 30, 40, 50)
+
+Consider this function call:
+add(10, 20, 30, 40)
+Python collects all the arguments into a tuple:
+args = (10, 20, 30, 40)
+The for loop accesses each value and calculates the sum.
+
+B. **kwargs – Variable-Length Keyword Arguments
+The **kwargs syntax allows us to pass multiple keyword arguments to a function.Python collects these arguments as a dictionary format.
+
+Example:
+def student_details(**kwargs):    
+  for key, value in kwargs.items():        
+    print(key, ":", value)
+
+student_details(name="Bhargav",age=18,course="Python",college="XYZ College")
