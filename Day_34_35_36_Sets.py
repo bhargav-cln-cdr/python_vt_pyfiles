@@ -1,6 +1,6 @@
 """
 Sets:
-A Set is a immutable collection of unique elements. That means sets allows only immuatble elements as its members.(That means only Tuples,strings,frozenset,integers,floats,complex,boolean values can be its members.)
+A Set is a immutable collection of unique elements. That means sets allows only immuatable elements as its members.(That means only Tuples,strings,frozenset,integers,floats,complex,boolean values can be its members.)
 But sets are mutable that means they can modify after its creation.
 
 Characteristics:
@@ -36,28 +36,44 @@ print(a)
 # Set Methods
 """
 1. add() - Add new members to a set
+
 2. remove() - remove existing elements from a set if the element is present.
               If the element is not present, raises a KeyError.
+              
 3. pop() - removes an arbitrary element from a set if the set is non empty.
-           if the set is empty, raises error.
+           If the set is empty, raises KeyError.
+           
 3. discard() - removes if the element exists and 
                ignores if the element doesn't exist in the set. It won't raises the KeyError.
+               
 4. clear() - It removes all the elements and makes the set empty.
-4. union() - It Performs Union of two sets. (A U B)
-5. intersection() - It Performs the intersection of two sets. (A ∩ B)
-6. intersection_update() - It Performs the intersection of two sets and
-                           updates the original set. (A ∩ B)
-7. difference() - It Performs the set difference between two sets. (A - B)
+
+5. union() - It Performs Union of two sets. (A U B)
+
+6. difference() - It Performs the set difference between two sets. (A - B)
+
+7. intersection() - It Performs the intersection of two sets. (A ∩ B)
+
+8.symmetric_difference() - It Performs the symmetric difference between
+                            two sets. (A U B) - (A ∩ B) 
+                            
+Note: The above 4 to 8 returns the new resultant set.
+
 8. difference_update() - It Performs the set difference between two sets and
                            updates the original set. (A - B)
-9. symmetric_difference() - It Performs the symmetric difference between
-                            two sets. (A U B) - (A ∩ B)
+                           
+9. intersection_update() - It Performs the intersection of two sets and
+                           updates the original set. (A ∩ B)
+                           
 10. symmetric_difference_update() - It Performs the symmetric difference
                                     between two sets and
                                     updates the original set.
                                     (A U B) - (A ∩ B)
+                                    
 11. update() - adds the elements from an iterable
+
 12. isdisjoint() - It is a boolean method it checks whether the two sets are disjoint or not. If disjoint,returns True else False.
+
 13. issuperset() - 
 14. issubset() - 
 
