@@ -1,11 +1,12 @@
 """
 Function:
-A block of code or a piece of code which is intended to perform a specific task.
+A function is a  block of code or a piece of code which is intended to perform a specific task.
 
 Uses of Functions:
 1. Code Reusability- Write once , Reuse many times and can be called any number of times.
 
 2. Debugging- It is easy to debug the errors if the code base is in the form of functions.
+
 Real-world example: Online Shopping Application
 Consider an Amazon-like shopping application. It contains different operations:
 1. User login.
@@ -16,7 +17,8 @@ Consider an Amazon-like shopping application. It contains different operations:
 Suppose a customer faces an error while making a payment.
 If the application is developed using functions, the developer can directly check the make_payment() function instead of examining the entire application.
 
-3. Enhances Readability- Simple to understand.
+3. Enhances Readability- Simple to understand that means by looking at the names of the functions we can easily understand the functionality of that function behind.
+
 Real-world example: Hospital Management System
 
 Consider a hospital management system. It performs several operations:
@@ -25,6 +27,7 @@ Consider a hospital management system. It performs several operations:
 - Calculating medical bills.
 - Generating prescriptions.
 - Scheduling appointments.
+
 Imagine seeing a program with hundreds of lines of code written continuously. It becomes difficult to understand.
 Instead, developers use meaningful function names such as:
 register_patient()
@@ -32,6 +35,7 @@ check_patient_details()
 calculate_medical_bill()
 generate_prescription()
 schedule_appointment()
+
 By looking at these names, anyone can understand what each part of the program does without reading every line of code.
 
 4. Modularity- The larger codebase is divided to smaller or meaningful chunks.
@@ -57,11 +61,10 @@ Notes:
    return statement is used to return the values which are calculated inside the function to return from the function
 5. When a function encounters a return statement, it will return the value from the function and the control will exit from the function.
 6. A function can be declared once and called unlimited number of times.
-7. Functions can have parameters. These can be changed while calling the function.
-8. The parameters in the function declaration are called function parameters
-   and those in the function call are called function arguments.
-9. The Function arguments are positional.
-10. All the functions will have a default return value of None
+7. The variables used  in the function declaration or definition are called as function parameters
+   and the values used in the function call are called as function arguments.
+8. The Function arguments are positional.
+10. All the functions will have a default return value of None in python.
 """
 def my_function():
     print("Inside the Function...")
