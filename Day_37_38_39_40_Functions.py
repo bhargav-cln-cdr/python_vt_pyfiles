@@ -1,13 +1,42 @@
 """
 Function:
-A block of code that performs certain task
+A block of code or a piece of code which is intended to perform a specific task.
 
 Uses of Functions:
-1. Code Reusability
-2. Debugging
-3. Enhances Readability
-4. Modularity
-5.
+1. Code Reusability- Write once , Reuse many times and can be called any number of times.
+
+2. Debugging- It is easy to debug the errors if the code base is in the form of functions.
+Real-world example: Online Shopping Application
+Consider an Amazon-like shopping application. It contains different operations:
+1. User login.
+2. Product search.
+3. Add products to cart.
+4. Payment processing.
+5. Order confirmation.
+Suppose a customer faces an error while making a payment.
+If the application is developed using functions, the developer can directly check the make_payment() function instead of examining the entire application.
+
+3. Enhances Readability- Simple to understand.
+Real-world example: Hospital Management System
+
+Consider a hospital management system. It performs several operations:
+- Registering patients.
+- Checking patient details.
+- Calculating medical bills.
+- Generating prescriptions.
+- Scheduling appointments.
+Imagine seeing a program with hundreds of lines of code written continuously. It becomes difficult to understand.
+Instead, developers use meaningful function names such as:
+register_patient()
+check_patient_details()
+calculate_medical_bill()
+generate_prescription()
+schedule_appointment()
+By looking at these names, anyone can understand what each part of the program does without reading every line of code.
+
+4. Modularity- The larger codebase is divided to smaller or meaningful chunks.
+Instead of developing the entire application as one large block of code, developers divide it into smaller functions.
+
 
 
 Syntax for declaring functions:
@@ -16,7 +45,7 @@ def <function_name>(<parameters>):
 
 
 Syntax for function call:
-function_name(<parameters>)
+function_name(<arguments>)
 
 
 Notes:
