@@ -1,0 +1,25 @@
+Shallow Copy: The copy in which changes applied to the nested/inner objects of copied item also reflects the original object structure but other than the nested/inner objects changes won't be applied.
+This is known as Shallow copy.
+
+import copy
+original = [[1, 2], [3, 4]]
+shallow = copy.copy(original)
+shallow[0].append(99) #Applying the changes to the nested/inner objects
+print(shallow)
+print(original)
+
+#Applying the changes to the object other then nested list
+shallow.append([5, 6]) 
+print(shallow) 
+print(original) 
+
+Deep Copy: The copy in which changes applied to the nested/inner objects of copied item won't get reflects the original object structure.
+This is known as Deep copy.
+
+import copy
+original = [[1, 2], [3, 4]]
+deep = copy.deepcopy(original)
+deep[0].append(88)    
+print(original)
+print(deep)     
+
