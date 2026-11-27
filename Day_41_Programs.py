@@ -84,3 +84,13 @@ if are_anagrams(word1, word2):
     print(f"{word1} and {word2} are anagrams...")
 else:
     print(f"{word1} and {word2} are not anagrams...")
+
+def are_anagrams(s1,s2):
+  if sorted(s1)==sorted(s2) and len(s1)==len(s2):
+    return True
+  else:
+    return False
+s1=input("Enter String1:")
+s2=input("Enter String2:")
+res=are_anagrams(s1,s2)
+print(res)
