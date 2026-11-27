@@ -1,6 +1,6 @@
 """
 Recursion:
-The Process of function calling itself is called recursion.
+The Process of calling the function repeatedly itself until a base condition is satisfied is known as recursion.
 
 Recursive Function:
 The Function which is calling itself is called recursive function.
@@ -33,9 +33,10 @@ Recursive Function contains:
 1. Base Condition:
    The Condition at which to stop the recursion.
    The Recursive Function without the base condition
-   will lead to Maximum Recursion Depth Exceeded.
+   will lead to Maximum Recursion Depth Exceeded Error.
 2. Recursive Call:
    Recursive call with updated parameters.
+   
 """
 
 
